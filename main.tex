@@ -1,4 +1,4 @@
-\documentclass[11pt,notes]{beamer}
+\documentclass[notes,11pt]{beamer}
 
 %%%%%%%% tema e cor %%%%%%%%
 \mode<presentation> {
@@ -6,24 +6,40 @@
 %\usecolortheme{albatross}
 }
 
-\input{config.tex}
 
+\input{config.tex}
 %%%%%%%% Title %%%%%%%%
-\title[RAM Based CEPH]{RAM Based CEPH, and Diamond’s Cloud Backend} 
+\title[RAM Based CEPH]{CEPH The Transient Object Store} 
 
 %%%%%%%% Name %%%%%%%%
-\author[Gabryel Mason-Williams]{Gabryel Mason-Williams} 
-
+%\author[Gabryel Mason-Williams, Dave Bond, Mark Basham]{Gabryel Mason-Williams\\ Dave Bond\\ Mark Basha} 
+\author[me]{Gabryel Mason-Williams\\[3mm] Dave Bond, Mark Basham}
 \begin{document}
+% \input{files/seminars}
+
 \input{files/pre-slides.tex}
 
 %%%%%%%% slides %%%%%%%%
-\section{Overview of What Ceph is} 
-\input{files/introduction.tex}
-
+\section{File Storage}
+\input{files/filestorage}
+\section{Object Storage}
+\input{files/objectStorage}
+\section{Ceph} 
+\input{files/ceph.tex}
 \section{RAM}
 \input{files/ram.tex}
-
+\section{Ceph Storage}
+\input{files/cephStorage}
+\section{Part 2}
+\input{files/catchUp}
+\section{Cluster}
+\input{files/uge}
+\section{Performance}
+\input{files/performance}
+\section{Use Case}
+\input{files/useCase}
+\section{Future work}
+\input{files/future}
 \section{Questions}
 \input{files/questions.tex}
 
